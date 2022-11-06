@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    
+    <div class="choose-products">
+        <h3 class="app-name">e-commerce videojuegos</h3>
+        <button id="btn-ver-productos">VER PRODUCTOS</button>
+        <img class="img-carrito" id="img-carrito" src="./carrito-icon.png">
+    </div>
+
+    <div class="container-productos" id="container-productos"></div>
+
+    <!-- Mismo container reutilizado para carrito-->
+    <div class="container-productos" id="container-carrito"></div>
+
+    <div class="pagination" id="pagination">
+        <button id="btnAnterior">Anterior</button>
+        <button id="btnSiguiente">Siguiente</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js" type="module"></script>
+
+</body>
+
+</html>
